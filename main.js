@@ -47,48 +47,48 @@
 
 // }
 
-    const gridContainer = document.querySelector(".grid-container")
-    gridContainer.innerHTML = ""
+//     const gridContainer = document.querySelector(".grid-container")
+//     gridContainer.innerHTML = ""
 
-    const totalCells = 64
+//     const totalCells = 64
 
-    const flexBasis = 100 / Math.max(8)
+//     const flexBasis = 100 / Math.max(8)
 
-    for (let i=0; i<64; i++) {
-        const cell = document.createElement("div")
-        cell.classList.add("grid-cell")
-        cell.style.flexBasis = flexBasis + "%"
-        gridContainer.appendChild(cell)
-    }
-document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("click", () => x.classList.add("green")))
+//     for (let i=0; i<64; i++) {
+//         const cell = document.createElement("div")
+//         cell.classList.add("grid-cell")
+//         cell.style.flexBasis = flexBasis + "%"
+//         gridContainer.appendChild(cell)
+//     }
+// document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("click", () => x.classList.add("green")))
 
-document.querySelector("button").addEventListener("click", createGrid)
+// document.querySelector("button").addEventListener("click", createGrid)
 
-function createGrid() {
-    let size = prompt ("Enter a number 1-100 to create a grid: ")
-    let roundedSize = Math.round(size)
-    console.log(roundedSize)
-    if (roundedSize >=1 && roundedSize <=100) {
-    const gridContainer = document.querySelector(".grid-container")
-    gridContainer.innerHTML = ""
+// function createGrid() {
+//     let size = prompt ("Enter a number 1-100 to create a grid: ")
+//     let roundedSize = Math.round(size)
+//     console.log(roundedSize)
+//     if (roundedSize >=1 && roundedSize <=100) {
+//     const gridContainer = document.querySelector(".grid-container")
+//     gridContainer.innerHTML = ""
 
-    const totalCells = roundedSize * roundedSize
+//     const totalCells = roundedSize * roundedSize
 
-    const flexBasis = 100 / Math.max(roundedSize)
+//     const flexBasis = 100 / Math.max(roundedSize)
 
-    for (let i=0; i<totalCells; i++) {
-        const cell = document.createElement("div")
-        cell.classList.add("grid-cell")
-        cell.style.flexBasis = flexBasis + "%"
-        gridContainer.appendChild(cell)
-    }
-    document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("click", () => x.classList.add("green")))
-    document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("mousedown", () => x.classList.add("green")))
-    }
-    else {
-        alert("Error, improper input!")
-    }
-}
+//     for (let i=0; i<totalCells; i++) {
+//         const cell = document.createElement("div")
+//         cell.classList.add("grid-cell")
+//         cell.style.flexBasis = flexBasis + "%"
+//         gridContainer.appendChild(cell)
+//     }
+//     document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("click", () => x.classList.add("green")))
+//     document.querySelectorAll(".grid-cell").forEach(x => x.addEventListener("mousedown", () => x.classList.add("green")))
+//     }
+//     else {
+//         alert("Error, improper input!")
+//     }
+// }
 
 
 
