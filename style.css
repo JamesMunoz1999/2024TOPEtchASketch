@@ -1,0 +1,39 @@
+.container {
+    background-color: darkgray;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    background-color: gray;
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+}
+
+.green {
+    background-color: green;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+}
+
+.newGrid {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
